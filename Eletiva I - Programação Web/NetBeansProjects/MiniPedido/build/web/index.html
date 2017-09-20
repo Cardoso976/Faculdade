@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MiniPedido</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Faça Seu Pedido</h1>
+        <form action="pedido.jsp">
+            <table>
+                <tr>
+                    <td>Pen Drive</td>
+                    <td>R$19,90</td>
+                    <td><input type="number" name="pendrive" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>R$24,90</td>
+                    <td><input type="number" name="mouse" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Cartucho</td>
+                    <td>R$80,00</td>
+                    <td><input type="number" name="cartucho" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td>Frete</td>  
+                    <td></td>
+                    <td>
+                        <select name="frete">
+                            <option value="0.075">PAC (+7,5%)</option>
+                            <option value="0.125">SEDEX (+12,5%)</option>
+                            <option value="0.150">SEDEX10 (+15,0%)</option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td><input type="checkbox">Embrulho</td>
+                    <td></td>
+                    <td><input type="submit"></td>                    
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
