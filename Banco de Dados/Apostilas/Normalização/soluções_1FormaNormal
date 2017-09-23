@@ -1,0 +1,21 @@
+Livro (cod-livro, título, nome-editora, endereço-editora,{cod-autor, nome-autor})
+
+1 Forma Normal
+Livro (cod-livro,título,nome-editora, rua, bairro, nro, cep, cidade, estado)
+Livro_Autor(cod-livro, cod-autor, primeiro_nome, nome_meio, sobrenome)
+
+
+ProjetoColaborador (cod_proj,tipo,descrição, {cod_Colaborador, nome, categoria, salário} dataproj)
+
+Projeto(cod_proj,tipo,descrição,dia_proj, mes_proj, ano_proj)
+ProjetoColaborador(cod_proj,cod_Colaborador, primeiro_nome, nome_meio, sobrenome, categoria, 
+bonus, comissao, valor_liquido_salario)
+
+Aluno(RA,nome-aluno,{cod-curso,ano-ingresso}, {cod-disciplina,nome-disciplina{semestre-cursada,cod-prof, nome-prof } nota-disc})
+
+Aluno (RA, primeiro_nome, nome_meio, sobrenome)
+AlunoCurso (RA, cod_curso, ano_ingresso)
+AlunoDisciplina (RA, cod-disciplina, nome_disciplina, nota1, nota2, nota3)
+DisciplinaSemestre (RA, cod_disciplina,cod-prof, semestre-cursada, primeiro_nome, nome_meio, sobrenome)
+
+
