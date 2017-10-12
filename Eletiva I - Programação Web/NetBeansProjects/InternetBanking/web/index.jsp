@@ -14,12 +14,12 @@
     <body>
         <%
             double saldo = 0;
-            
-              if(session.isNew()){
-                  session.setAttribute("saldo", saldo);
-              }else{
-                  saldo = (Double)session.getAttribute("saldo");
-              }
+
+            if (session.isNew()) {
+                session.setAttribute("saldo", saldo);
+            } else {
+                saldo = (Double) session.getAttribute("saldo");
+            }
         %>
         <h1>Saldo: R$<%= String.format("%.2f", saldo)%></h1>
         <ul>
@@ -30,6 +30,6 @@
                 <a href="form_saque.html">Sacar</a>
             </li>
         </ul>
-        
+
     </body>
 </html>
