@@ -1,9 +1,0 @@
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe.config
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.pdb
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csprojResolveAssemblyReference.cache
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Form1.resources
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Properties.Resources.resources
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csproj.GenerateResource.Cache
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.exe
-c:\users\família\documents\visual studio 2017\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.pdb
