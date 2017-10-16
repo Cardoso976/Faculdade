@@ -1,0 +1,6 @@
+Emmet
+CodeIntel
+SideBar Enhacce
+AdvanceNewFile
+Git Gutter
+DocBlockr
