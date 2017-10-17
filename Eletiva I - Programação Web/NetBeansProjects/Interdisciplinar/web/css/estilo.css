@@ -1,0 +1,19 @@
+body {
+	padding-top: 70px; 
+}
+
+.cabecalho {
+	margin-top: 25px;
+}
+
+.hero-feature {
+	margin-bottom: 30px;
+}
+
+.rodape{	
+	margin: 50px 0;
+}
+
+img{
+	border-radius: 5px;
+}
