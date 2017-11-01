@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <!<script>
+        <script>
         alert("Salve Quebrada!");
         var nome = prompt("Qual é o seu nome?");
         alert("Prazer em conhece-lo, "+ nome);
-    <!  </script>
+      </script>
         <header>
             <table>
               <tr>
