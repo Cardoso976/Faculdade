@@ -1,0 +1,38 @@
+header {
+    border: solid silver;
+    background-color: black;
+    /* height: 70px; */
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    margin: 5px;
+    text-align: center;
+}
+nav{
+    border: 1px solid silver;
+    font-size: 16px;
+    font-family: Verdana;
+    background-color: black;
+}
+section{
+    border: solid silver;
+    margin: 10px;
+    padding: 10px;
+}
+h2{
+    font-size: 20px;
+    font-family: Verdana;
+}
+#p1{
+    border: dashet silver;
+    margin: 5px;
+}
+#p2{
+    border: dashet black; 
+    margin: 5px;
+}
+footer{
+    border: solid silver;
+    text-align: center;
+    font-size: 12px;
+}
