@@ -1,4 +1,4 @@
-
+<%
 	InitialContext contexto = new InitialContext();
 	DataSource ds = (DataSource)contexto.lookup("jdbc/loja");/*Glassfish procura as conf do xml para conectar no banco*/
 	Connection conexao = ds.getConnection();/*Conexão obtida*/
@@ -11,3 +11,4 @@
 	comando.setString(2, senha);
 
 	ResultSet res = comando.executeQuery();		
+%>
