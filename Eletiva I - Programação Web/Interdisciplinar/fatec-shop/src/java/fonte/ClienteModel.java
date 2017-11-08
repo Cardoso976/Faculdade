@@ -9,6 +9,7 @@ import javax.naming.NamingException;
 import javax.sql.DataSource;
 
 public class ClienteModel {
+
     int codigo;
     String nome;
     String endereco;
@@ -16,32 +17,41 @@ public class ClienteModel {
     String estado;
     String email;
     String senha;
-    
-    public ClienteModel RecuperarPeloId(int id) throws SQLException, NamingException{
-        
-        ClienteModel retorno = new ClienteModel();
-        
+
+    /**
+     *
+     * @return
+     * @throws SQLException
+     * @throws NamingException
+     */
+    public ClienteModel RecuperarLista() throws SQLException, NamingException{
+
+       ClienteModel cliente = new ClienteModel();
+
         InitialContext contexto = new InitialContext();
-	DataSource ds = (DataSource)contexto.lookup("jdbc/loja");/*Glassfish procura as conf do xml para conectar no banco*/
-	Connection conexao = ds.getConnection();/*Conexão obtida*/
+        DataSource ds = (DataSource) contexto.lookup("jdbc/fatec-shop");/*Glassfish procura as conf do xml para conectar no banco*/
+        Connection conexao = ds.getConnection();/*Conexão obtida*/
 
-	String sql = "select * from clientes where id = ?";
+        String sql = "select * from clientes where codigo=1";
 
-	PreparedStatement comando = conexao.prepareStatement(sql);
-        
-	comando.setInt(1, id);        
-        /*comando.setString(2, senha);*/
+        PreparedStatement comando = conexao.prepareStatement(sql);
 
-	ResultSet res = comando.executeQuery();
+            comando.setInt(1, 1);       
+          /*comando.setString(2, senha);*/
+        ResultSet res = comando.executeQuery();
         
-        retorno.codigo = res.getInt("codigo");
-        retorno.endereco = res.getString("endereco");
-        retorno.cidade = res.getString("cidade");
-        retorno.estado = res.getString("estado");
-        retorno.email = res.getString("email");
-        retorno.senha = res.getString("senha");        
-        
-        return retorno;
+        //while (res != null) {
+            cliente = new ClienteModel();                    
+            cliente.codigo = res.getInt("codigo");
+            cliente.endereco = res.getString("endereco");
+            cliente.cidade = res.getString("cidade");
+            cliente.estado = res.getString("estado");
+            cliente.email = res.getString("email");
+            cliente.senha = res.getString("senha");
+           /*cli.add(cliente);*/
+        //}   
+               
+        return cliente;
     }
 
     public int getCodigo() {

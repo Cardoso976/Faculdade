@@ -28,3 +28,6 @@ CREATE TABLE pedidos(
 	CONSTRAINT FOREIGN KEY FK_produtos(codigo_do_produto)
 		REFERENCES produtos(codigo)
 );
+
+INSERT INTO clientes(nome,endereco,cidade,estado,email,senha) VALUES ('Rodrigo','Rua Maceió 407','Garça','SP','rodrigo_cardoso97@hotmail.com','1234');
+INSERT INTO clientes(nome,endereco,cidade,estado,email,senha) VALUES ('Valmir','Rua Maceió 407','Garça','SP','cardosovalmir@hotmail.com','1234');
