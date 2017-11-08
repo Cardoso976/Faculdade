@@ -1,3 +1,6 @@
+CREATE DATABASE fatec_shop;
+
+USE fatec_shop;
 
 CREATE TABLE clientes(
 	codigo int PRIMARY KEY AUTO_INCREMENT NOT NULL,

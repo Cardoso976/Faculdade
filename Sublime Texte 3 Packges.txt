@@ -1,3 +1,4 @@
+A File Icon
 Emmet
 CodeIntel
 SideBar Enhacce

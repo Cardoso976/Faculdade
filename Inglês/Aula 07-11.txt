@@ -1,0 +1,9 @@
+Questions
+
+01 - What is your name? / My name is Rodrigo
+02 - How old are you? / I am 19 years old
+03 - Where were you born? / I was born in São José do Rio Preto
+04 - Where do you live? / I live in Garça
+05 - Where are your from? / I am from Brazil
+06 - What do you do? / I work and study
+07 - How are you? / Fine / Bad / More or less

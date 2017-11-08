@@ -1,11 +1,11 @@
 (function(){
 	$("#logar").click(function(){	
-		$("#login").show();		
+		$("#login").toggle();		
 	});
 
 	$("#registro").click(function(){
 		//$("#login").modal('hide');				
-		$("#registrar").show();				
+		$("#registrar").toggle();				
 	});
 
 	$("#confimar-login").click(function(){
@@ -18,6 +18,6 @@
 	});
 
 	$("#cart").click(function() {
-		$(".shopping-cart").fadeToggle( "fast");
+		$(".shopping-cart").fadeToggle("fast");
 	});	
 })();
