@@ -1,4 +1,4 @@
-(function(){
+$(function(){
 	$("#logar").click(function(){	
 		$("#login").toggle();		
 	});
