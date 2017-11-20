@@ -13,17 +13,17 @@ order by PrimeiroNome, SegundoNome, UltimoNome;
 
 select DataNasci, PrimeiroNome
 from Funcionarios
-order by DataNasci and PrimeiroNome;
+order by DataNasci desc;
 
 select PrimeiroNome, UltimoNome, Fone, Endereco
 from Funcionarios
-group by Cidade;
+order by Cidade;
 
-select sum(Salario)
+select sum(Salario) as TotalFolhaDePagamento
 from Funcionarios;
 
 select count(*)
 from Funcionarios;
 
-select avg(Salario)
+select round(avg(Salario),2)
 from Funcionarios;
