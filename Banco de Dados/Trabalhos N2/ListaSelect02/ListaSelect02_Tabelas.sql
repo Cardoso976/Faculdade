@@ -1,44 +1,50 @@
-CREATE TABLE ambulatorios (
+CREATE  DATABASE  Hospital;
+
+USE Hospital;
+
+CREATE TABLE Ambulatorios (
 	nroa int PRIMARY KEY NOT NULL,
 	andar numeric(3) NOT NULL,
 	capacidade smallint
 );
 
-CREATE TABLE medicos(
+CREATE TABLE Medicos(
 	codm int PRIMARY KEY NOT NULL,
 	nome varchar(40) NOT NULL,
 	idade smallint NOT NULL, 
 	especialidade char(20),
-	cpf varchar(20) UNIQUE NOT NULL,
-	nroamb int NOT NULL,
-	CONSTRAINT FOREING KEY fk_ambulatorios(nroamb) REFERENCES ambulatorios(nroa)
+	CPF varchar(20) UNIQUE,
+	cidade varchar(30),
+	nroa int,
+	CONSTRAINT fk_Ambulatorios FOREIGN KEY (nroa) 
+	REFERENCES Ambulatorios(nroa)
 );
 
-CREATE TABLE pacientes(
+CREATE TABLE Pacientes(
 	codp int PRIMARY KEY NOT NULL,
 	nome varchar(40) NOT NULL,
 	idade int(2) NOT NULL,
 	cidade varchar(30) NOT NULL,
-	cpf varchar(20) UNIQUE, 
+	CPF varchar(20) UNIQUE, 
 	doenca varchar(40) NOT NULL
 );
 
-CREATE TABLE funcionarios(
+CREATE TABLE Funcionarios(
 	codf int PRIMARY KEY NOT NULL,
 	nome varchar(40) NOT NULL,
 	idade smallint,
-	cpf varchar(20) NOT NULL UNIQUE,
+	CPF varchar(20) UNIQUE,
 	cidade varchar(30),
 	salario numeric(10),
 	cargo varchar(20)
 );
 
-CREATE TABLE consultas(
+CREATE TABLE Consultas(
 	codm int,
 	codp int,
 	data date,
 	hora time,
 	CONSTRAINT PRIMARY KEY(codm, data, hora),
-	CONSTRAINT FOREING KEY fk_medicos(codm) REFERENCES medicos(codm),
-	CONSTRAINT FOREING KEY fk_pacientes(codp) REFERENCES pacientes(codp)
+	CONSTRAINT fk_Medicos FOREIGN KEY (codm) REFERENCES Medicos(codm),
+	CONSTRAINT fk_Pacientes FOREIGN KEY (codp) REFERENCES Pacientes(codp)
 );
