@@ -1,0 +1,53 @@
+Virtual Hosts no Apache
+
+Configurando sites:
+root@ubuntuserver1604:~# cd /var/www/
+root@ubuntuserver1604:/var/www# mkdir -p seunome.com/public_html
+
+root@ubuntuserver1604:/# chown -R $USER:$USER /var/www/seunome.com/public_html/
+root@ubuntuserver1604:/# chmod -R 755 /var/www/
+
+root@ubuntuserver1604:/var/www/seunome.com/public_html# vi index.html
+
+root@ubuntuserver1604:/var/www/seunome.com/public_html# cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/seunome.com
+
+root@ubuntuserver1604:/var/www/seunome.com/public_html# cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/seunome.com.conf
+
+root@ubuntuserver1604:/var/www/seunome.com/public_html# vi /etc/apache2/sites-available/seunome.com.conf
+
+<VirtualHost *:80>
+  
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/seunome.com/public_html
+        ServerName seunome.com
+        ServerAlias www.seunome.com
+
+    
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+
+
+root@ubuntuserver1604:/var/www/seunome.com/public_html# a2ensite seunome.com.conf
+Enabling site seunome.com.
+To activate the new configuration, you need to run:
+  service apache2 reload
+root@ubuntuserver1604:/var/www/seunome.com/public_html# service apache2 restart
+
+-----------------------------------
+Alterar o hosts
+
+Windows:
+C:\Windows\System32\drivers\etc
+
+Inserir as linhas:
+	192.168.0.6    	example.com
+	192.168.0.6    	teste.com
+
+
+Linux:
+/etc/hosts
+
+testar
