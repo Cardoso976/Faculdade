@@ -31,7 +31,7 @@
         ResultSet res = comando.executeQuery();
         res.next();
         %>
-        <form method="POST" action="altercliente.jsp">
+        <form method="POST" action="alterarcliente.jsp">
             <table border="1">
                 <tr>
                     <td>Código</td>
@@ -43,7 +43,7 @@
                 <tr>
                     <td>Nome</td>
                     <td><%= res.getString("nome")%>
-                        <input type="text" name="name" size="50" maxlength="50" 
+                        <input type="text" name="nome" size="50" maxlength="50" 
                         value="<%= res.getString("nome")%>">
                     </td>
                 </tr> 
