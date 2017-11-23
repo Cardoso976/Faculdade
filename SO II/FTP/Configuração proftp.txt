@@ -1,0 +1,41 @@
+#Preciso explicar? kkkk
+sudo apt-get update
+
+#Instalar o FTP
+
+	sudo apt-get install proftpd
+
+#Adicionar Usuario, definir senha e não esquecer vai usar pra acessar depois
+
+	sudo adduser seuusuario
+
+#Adicionar Grupo
+
+	sudo addgroup seugrupo
+
+#Adicionar Usuario ao Grupo
+
+	sudo addgroup seuusuario seugrupo
+
+#Altera Configuração do FTP
+
+	sudo vi /etc/proftpd/proftpd.conf
+
+#Altera ServerName SeuServerNome
+#Usuario seuusuario
+#Grupo seugrupo
+#esc :wq (salvar e sair)
+
+#Dar um restart no FTP
+
+	sudo service proftpd restart
+
+#Alterar permissão da pasta que voce vai utilizar, no meu caso /var/www/
+
+	sudo chmod -R 777 /var/www/
+
+#Pronto!!
+#Acessar ftp://seunome.com
+#Em qualquer barra de pesquisa do Windows
+#E no navegador
+#A senha que pedir é a do usuario :)

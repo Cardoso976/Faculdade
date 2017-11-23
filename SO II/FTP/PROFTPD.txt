@@ -1,0 +1,9 @@
+apt-get update
+apt-get install proftpd
+service proftpd start
+cat /etc/proftpd/proftpd.conf
+vi /etc/proftpd/proftpd.conf
+
+
+
+service proftpd restart
