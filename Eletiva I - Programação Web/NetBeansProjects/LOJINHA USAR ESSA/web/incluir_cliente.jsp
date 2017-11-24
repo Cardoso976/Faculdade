@@ -38,9 +38,9 @@
            comando.setString(5, email);
            comando.setString(6, senha);
            if (comando.executeUpdate() > 0){
-               out.println("<h2>CADASTRO REALIZADO COM SUCESSO!</H2>");
+               out.println("<h2>CADASTRO REALIZADO COM SUCESSO!</h2>");
            }else{
-            out.println("<h2>FALHA NO CADASTRO!</H2>");
+            out.println("<h2>FALHA NO CADASTRO!</h2>");
         }
            conexao.close();
            %>
