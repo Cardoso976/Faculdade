@@ -38,7 +38,7 @@
                             "<th>CIDADE</th>"+
                             "<th>ESTADO</th>"+
                             "<th>E-MAIL</th>"+
-                            "<th>SEHHA</th>"+
+                            "<th>SENHA</th>"+
                             "<th>AÇÕES</th>"+
                         "</tr>");
 
